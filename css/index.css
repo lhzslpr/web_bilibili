@@ -1,0 +1,7 @@
+#name{
+	 width: 100%;
+    white-space: nowrap; /* 自适应宽度*/
+    word-break:  keep-all; /* 避免长单词截断，保持全部 */
+    height: 200px;
+    background-color: #24F0FF;
+}
