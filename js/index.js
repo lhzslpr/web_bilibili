@@ -31,6 +31,12 @@ work51.onclick = function function_name(argument) {
 	window.open("work5-1.html");
 	console.log(1);
 }
+work52.onclick = function function_name(argument) {
+	window.open("work5-2.html");
+	console.log(1);
+}
 
-
-
+work52.onmousemove = function function_name(argument) {
+	img.src =  "img/work5-2.png";
+	//console.log(1);
+}
