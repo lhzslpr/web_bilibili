@@ -20,12 +20,13 @@ findhotle.searchNearby("宾馆", "杭州市西湖");
 
 map2.centerAndZoom(school, 18);
 map2.enableScrollWheelZoom(true);  
+
 var local = new BMap.LocalSearch(school, {
     renderOptions: {
         map: map2
     }
 });  
-
+local.searchNearby("宾馆", "西湖");
 var transit = new BMap.TransitRoute(map2, {
     renderOptions: {
         map: map2,
@@ -50,7 +51,7 @@ local.setMarkersSetCallback(function (weizhi) {
     }
 })
 
-local.searchNearby("宾馆", school);
+
 
 
 map3.centerAndZoom(cen, 12);
