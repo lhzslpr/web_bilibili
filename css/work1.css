@@ -1,0 +1,139 @@
+
+li {
+	list-style: none;
+}
+.contianer{
+	width: 290px;
+	height: 490px;
+	//background-color: gray;
+	margin: 100px;
+}
+
+.contianer-1{
+	width: 290px;
+	height: 30px;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #EEEEEE;
+}
+.contianer-2{
+	height: 70px;
+	width: 290px;
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color: #EEEEEE;	
+	padding:15px 0px 0px 10px;
+}
+.contianer-3{
+	height: 120px;
+	width: 290px;
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color: #EEEEEE;	
+	padding: 20px 0px 0px 0px ;
+}
+.contianer-4{
+	height: 50px;
+	width: 290px;
+	border-style: solid;
+	border-width: 0px 1px 1px 1px;
+	border-color: #EEEEEE;	
+	padding: 15px 0px 0px 10px;
+}
+.contianer-5{
+	height: 220px;
+	width: 290px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #EEEEEE;	
+}
+
+
+.con-1-sqr{
+	width: 57px;
+	height: 30px;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+}
+.con-text{
+	width: 260px;
+	height: 20px;
+	border-width: 1px;
+	border-color: #9F9F9F;
+	border-style: solid;
+	margin-bottom: 5px;
+}
+
+.size{
+	width: 190px;
+	float : left;
+}
+
+
+.con3-sqr1{
+	width: 60px;
+	height: 65px;
+	float : left;
+	margin: -10px 5px 0px 10px;
+}
+.con3-sqr2{
+	width: 90px;
+	height: 25px;
+	float : left;
+	margin: 10px 10px 0px -60px;
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	line-height: 25px;
+}
+.con3-sqr3{
+	width: 75px;
+	height: 25px;
+	float : left;
+	margin: 10px 10px 0px 0px ;
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	line-height: 25px;
+}
+.color-orange{
+	background-color: #FF4400;
+}
+
+.con5-sqr1{
+	width: 116px;
+	height: 146px;
+	float: left;
+	border-style: solid;
+	border-width: 1px 1px 0px 1px;
+	box-sizing: border-box;
+	border-color: #EEEEEE;
+	text-align: center;
+	color: #777777;
+}
+
+.con5-sqr2{
+	width: 58px;
+	height: 73px;
+	float: left;
+	border-style: solid;
+	border-width: 1px 1px 0px 0px;
+	box-sizing: border-box;
+	text-align: center;
+	border-color: #EEEEEE;
+	color: #777777;
+	border-left-width: 
+
+}
+.con5-sqr2-pic{
+	width: 35px;
+	height: 35px;
+	margin: 10px 10px 1px 10px;
+}
+.con5-sqr1-pic{
+	width: 43px;
+	height: 70px;
+	margin: 35px 35px 10px 35px;
+}

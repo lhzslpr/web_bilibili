@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/work1.css">
+	<script src="https://cdn.bootcss.com/vue/1.0.7/vue.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<title>work</title>
+</head>
+<body>	
+
+
+
+	<div class = "contianer">
+		<div class = "contianer-1">
+			<li v-for = "todo in todos" class = "con-1-sqr">
+				{{todo.text}}
+			</li>
+		</div>
+
+
+		<div class = "contianer-2">
+			<div class = "con-text"></div>
+			<div class = "con-text"></div>
+		</div>
+
+
+		<div class = "contianer-3">
+			<div class = "con3-sqr1 color-orange"></div>
+			<div class = "con-text size"></div>
+			<div class = "con-text size"></div>
+			<div class = "con3-sqr2 color-orange">登录</div>
+			<div class = "con3-sqr3 color-orange">免费注册</div>
+			<div class = "con3-sqr3 color-orange">免费开店</div>
+		</div>
+
+		<div class = "contianer-4">
+			<div class = "con-text"></div>
+		</div>
+
+		<div class = "contianer-5">
+			<div class = "con5-sqr1">
+				<div class = "con5-sqr1-pic color-orange"></div>
+						充话费
+			</div>
+			<li v-for = "yy in yyy" class = "con5-sqr2">
+				<div class = "con5-sqr2-pic color-orange"></div>{{yy.text}}
+			</li>
+		</div>
+	</div>
+
+	
+	
+
+</body>
+<script src="js/vue-work1.js"></script>
+<script language="JavaScript" src="js/work1.js"></script> 
+
+</html>
