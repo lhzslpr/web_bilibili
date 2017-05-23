@@ -22,7 +22,7 @@ $(".sel").click(function(e){
 	 var IN = $(e.target).index();
 	 console.log(IN);
 	 $(".text").fadeOut();
-	 $(".text").eq(IN-3).fadeIn();
+	 $(".text").eq(IN-1).fadeIn();
 });
 
 
