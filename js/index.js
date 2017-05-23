@@ -59,4 +59,14 @@ work1.onmousemove = function function_name(argument) {
 	img.src =  "img/work1.png";
 	//console.log(1);
 }
+work3.onclick = function function_name(argument) {
+	window.open("work3.html");
+	console.log(1);
+}
+
+work3.onmousemove = function function_name(argument) {
+	img.src =  "img/work3.png";
+	//console.log(1);
+}
+
 
