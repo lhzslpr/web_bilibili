@@ -90,7 +90,17 @@ function hideface(){
 
 
 
-
+function preLoadImg(url) { 
+	var img = new Image(); 
+	img.src = url; 
+} 
+preLoadImg("img/divimg-1.png");
+preLoadImg("img/divimg-2.png");
+preLoadImg("img/divimg-3.png");
+preLoadImg("img/divimg-4.png");
+preLoadImg("img/divimg-5.png");
+preLoadImg("img/divimg-6.png");
+preLoadImg("img/divimg-7.png");
 
 $(".game-list-item").hover(function(e){  
 	var data_pic= $(e.target).children().attr("data-src");
