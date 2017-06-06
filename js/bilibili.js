@@ -347,9 +347,7 @@ $(".left-message-btn2").click(function(e){
 });
 
 
-						// <p class = "menu-stop-setting">屏蔽设定</p>menu-detail-setting
-						// <p class = "menu-danmu-list">弹幕列表</p>menu-detail-danmu
-						// <p class = "menu-other-video">推荐视频</p> menu-detail-video
+
 
 function menu_detaul_hide(){
 	$(".menu-detail-danmu").hide();
@@ -368,7 +366,6 @@ function menu_detaul_hide(){
 $(".menu-stop-setting").css("border-color","#00a1d6");
 $(".menu-stop-setting").css("color","#00a1d6");	
 $(".menu-danmu-list").click(function(e){
-	console.log(1);
 	menu_detaul_hide();
 	$(".menu-detail-danmu").show();	
 	$(".menu-danmu-list").css("border-color","#00a1d6");	
@@ -376,18 +373,16 @@ $(".menu-danmu-list").click(function(e){
 
 });
 $(".menu-stop-setting").click(function(e){
-	console.log(1);
 	menu_detaul_hide();
 	$(".menu-detail-setting").show();
 	$(".menu-stop-setting").css("border-color","#00a1d6");
 	$(".menu-stop-setting").css("color","#00a1d6");
 });
 $(".menu-other-video").click(function(e){
-	console.log(1);
 	menu_detaul_hide();
 	$(".menu-detail-video").show();	
 	$(".menu-other-video").css("border-color","#00a1d6");
-	$(".menu-stop-setting").css("color","#00a1d6");
+	$(".menu-other-video").css("color","#00a1d6");
 });
 
 
