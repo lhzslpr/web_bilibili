@@ -5,6 +5,7 @@
 	border-radius: 15px;
 	font-size: 100px;
 	text-align: center;
+	cursor: pointer;
 }
 
 
@@ -17,6 +18,7 @@
 	font-size: 30px;
 	text-align: center;
 	line-height: 100%;
+	cursor: pointer;
 }
 .dnf{
 	width: 20%;
@@ -24,6 +26,7 @@
 	border-radius: 15px;
 	background-color: red;
 	margin: 1px 40% 0% 0%; 
+	cursor: pointer;
 }
 #preview{
 	position:  absolute;
@@ -34,6 +37,7 @@
 	border-radius: 15px;
 	margin: 5px 0% 0% 6px; 
 	background-color: gray;
+	cursor: pointer;
 	
 }
 
