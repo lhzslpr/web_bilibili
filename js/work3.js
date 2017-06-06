@@ -25,7 +25,7 @@ $(".sel").click(function(e){
 	 $(".text").eq(IN-1).fadeIn();
 });
 
-
+ $(".text").fadeOut();
 $(".text").eq(0).fadeIn();
 $(".sel").eq(0).css("background-color", "grey");
 

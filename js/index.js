@@ -70,3 +70,7 @@ work3.onmousemove = function function_name(argument) {
 }
 
 
+bigwork.onclick= function function_name(argument) {
+	window.open("bilibili.html");
+	console.log(1);
+}
