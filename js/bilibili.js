@@ -411,7 +411,7 @@ var timer1 = setInterval(function(){
 		var totle_time=$("video")[0].duration;
 		var x= now_time/totle_time*100;
 		if(x==100){
-			play_flag=1-play_flag;	
+			play_flag=0;	
 			$(".left-con-play img").attr("src","img/con-play.png");  
 			$(".left-video-play").show();
 		}
@@ -442,13 +442,14 @@ $(".left-con-play").click(function(){
    			 return  min+":"+sec ;
  		});
  		$(".left-video-play").hide();
+ 		play_flag=1;
 	}
 	else {
 		$(".left-con-play img").attr("src","img/con-play.png");  
 		$("video").trigger('pause');
 		$(".left-video-play").show();
+		play_flag=0;
 	}
-	play_flag=1-play_flag;	
 });
 
 $(".left-video-play").click(function(){
@@ -463,7 +464,7 @@ $(".left-video-play").click(function(){
    			 return  min+":"+sec ;
  		});
  		$(".left-video-play").hide();	
- 		play_flag=1-play_flag;	
+ 		play_flag=1;
 });
 
 
@@ -480,13 +481,14 @@ $("video").click(function(){
    			 return  min+":"+sec ;
  		});
  		$(".left-video-play").hide();
+ 		play_flag=1;
 	}
 	else {
 		$(".left-con-play img").attr("src","img/con-play.png");  
 		$("video").trigger('pause');
 		$(".left-video-play").show();
+		play_flag=0;
 	}
-	play_flag=1-play_flag;	
 });
 
 
