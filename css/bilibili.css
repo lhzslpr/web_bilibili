@@ -2035,6 +2035,7 @@ a:link {
 	text-align: center;
 	display: none;
 	cursor: pointer;
+	opacity: 0.5
 }
 
 .recommend-list-content li img{
