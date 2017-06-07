@@ -11,6 +11,11 @@ $(".detail-gamecentry").hover(function(){
 	$(".detail-gamecentry").hide(); 
 }) ;
 
+ppt.onclick = function function_name(argument) {
+	window.open("ppt.html");
+	console.log(1);
+}
+
 
 
 $(".contianer-before-live").hover(function(){  
