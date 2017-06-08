@@ -133,14 +133,6 @@ $(".live-animat").hover(function(e){
 }) ;
 
 
-$(".find-pic").hover(function(e){  
-	$(e.target).children("img.find-pic-pos").attr("src","img/find-pic-2.png");  
-	$(e.target).children("img.find-pic-pos").css("margin","2px 0px 0px 0px ");  
-},function(e){  
-	$(e.target).children("img.find-pic-pos").attr("src","img/find-pic-1.png");
-	$(e.target).children("img.find-pic-pos").css("margin","0px 0px 0px 0px ");   
-
-}) ;
 
 
 
