@@ -192,7 +192,7 @@ var pic = new Vue({
 	el: '.player-left-con',
 	data: {
 		cons: [
-			{img_src :"img/cons/con-danmu.png"},
+			{img_src :"img/cons/con-danmu-stop.png"},
 			{img_src :"img/cons/con-for.png"},
 			{img_src :"img/cons/con-mod.png"},
 			{img_src :"img/cons/con-quan.png"}

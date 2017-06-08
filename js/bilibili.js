@@ -248,6 +248,21 @@ $(".third-3").hover(function(e){
 }) ;
 
 
+
+
+var danmu_btn=0;
+$(".left-con-item").children().eq(0).click(function(){
+	danmu_btn=1-danmu_btn;
+	if(0==danmu_btn){
+		$(".player-left-video").children().remove(".danmu-anim");
+		$(".left-con-item").children().eq(0).attr("src","img/cons/con-danmu-stop.png"); 
+	}
+	else{
+		$(".left-con-item").children().eq(0).attr("src","img/cons/con-danmu.png");  
+	}
+	
+});
+
 var play_flag=0;
 var timer1 = setInterval(function(){
 	var now_time=$("video")[0].currentTime;
@@ -275,7 +290,7 @@ var timer1 = setInterval(function(){
 			var danmu_min=$(".detail-danmu-content").children().eq(index).attr("data-min");
 			var danmu_flag=$(".detail-danmu-content").children().eq(index).attr("data-flag");
 			var danmu_text=$(".detail-danmu-content").children().eq(index).attr("data-text");
-			if(min==danmu_min && sec==danmu_sec && 0==danmu_flag){
+			if(min==danmu_min && sec==danmu_sec && 0==danmu_flag && 1==danmu_btn){
 				console.log(danmu_text);
 				$(".detail-danmu-content").children().eq(index).attr("data-flag","1");
 
