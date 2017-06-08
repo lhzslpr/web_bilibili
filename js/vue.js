@@ -10,7 +10,7 @@ var pic234 = new Vue({
 	})
 
 
-var pic234 = new Vue({
+var game_lis = new Vue({
 	el: '.game-list',
 	data: {
 		game_list: [
@@ -302,3 +302,48 @@ var content_menu = new Vue({
         }
     }
 });
+
+var danmu = new Vue({
+	el: '.detail-danmu-content',
+	data: {
+		danmus: [
+			{min:'00',sec:'01',text:'编弹幕好难啊',sendtime:'03-11 10:55'},
+			{min:'00',sec:'02',text:'想不出弹幕写什么好',sendtime:'03-11 10:55'},
+			{min:'00',sec:'03',text:'人生啊，真是寂寞如雪',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'弹幕一',sendtime:'03-11 10:55'},
+			{min:'00',sec:'05',text:'弹幕二',sendtime:'03-11 10:55'},
+			{min:'00',sec:'06',text:'弹幕三',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'不知道吹一波老师会不会给高分',sendtime:'03-11 10:55'},
+			{min:'00',sec:'07',text:'空降成功',sendtime:'03-11 10:55'},
+			{min:'00',sec:'11',text:'人生啊，真是寂寞如雪',sendtime:'03-11 10:55'},
+			{min:'00',sec:'08',text:'第一',sendtime:'03-11 10:55'},
+			{min:'00',sec:'01',text:'第一',sendtime:'03-11 10:55'},
+			{min:'00',sec:'05',text:'说好的0弹幕呐？这些都是什么',sendtime:'03-11 10:55'},
+			{min:'00',sec:'06',text:'为什么没声音',sendtime:'03-11 10:55'},
+			{min:'00',sec:'07',text:'因为视频没声音呗',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'弹幕一',sendtime:'03-11 10:55'},
+			{min:'00',sec:'09',text:'弹幕二',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'弹幕三',sendtime:'03-11 10:55'},
+			{min:'00',sec:'11',text:'视频的弹幕由我来组成',sendtime:'03-11 10:55'},
+			{min:'00',sec:'08',text:'第一',sendtime:'03-11 10:55'},
+			{min:'00',sec:'01',text:'第一',sendtime:'03-11 10:55'},
+			{min:'00',sec:'05',text:'视频的弹幕由我来组成',sendtime:'03-11 10:55'},
+			{min:'00',sec:'06',text:'视频的弹幕由我来组成',sendtime:'03-11 10:55'},
+			{min:'00',sec:'07',text:'视频的弹幕由我来组成',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'视频的弹幕由我来组成',sendtime:'03-11 10:55'},
+			{min:'00',sec:'09',text:'视频的弹幕由我来组成',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'视频的弹幕由我来组成',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'视频的弹幕由我来组成',sendtime:'03-11 10:55'},
+			{min:'00',sec:'09',text:'弹幕二',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'弹幕三',sendtime:'03-11 10:55'},
+			{min:'00',sec:'08',text:'编弹幕真心累',sendtime:'03-11 10:55'},
+			{min:'00',sec:'08',text:'我觉得吧',sendtime:'03-11 10:55'},
+			{min:'00',sec:'08',text:'读什么书',sendtime:'03-11 10:55'},
+			{min:'00',sec:'01',text:'女装大佬前来报到',sendtime:'03-11 10:55'},
+			{min:'00',sec:'00',text:'续一秒',sendtime:'03-11 10:55'},
+			{min:'00',sec:'01',text:'6666666',sendtime:'03-11 10:55'},
+			{min:'00',sec:'04',text:'23333333',sendtime:'03-11 10:55'},
+			{min:'00',sec:'01',text:'滑稽.jpg',sendtime:'03-11 10:55'}
+		]
+	  }
+	})

@@ -1089,6 +1089,8 @@ a:link {
 	width: 680px;
 	height:	440px;
 	position: relative;
+	overflow: hidden;
+	z-index: 1;
 }
 .left-video-play{
 	position: absolute;
@@ -1430,15 +1432,13 @@ a:link {
 .detail-danmu-content{
 	width: 300px;
 	height: 394px;
-}
-.detail-danmu-content{
-	line-height: 393px;
-	text-align: center;
 	color: #99a2aa;
 	font-size: 12px;
 	border-width: 0px 1px 1px 0px;
 	border-style: solid;
 	border-color: #E5E9EF;
+	overflow: hidden;
+ 	overflow-y:scroll; 
 }
 .detail-danmu-history{
 	width: 300px;
@@ -2043,4 +2043,47 @@ a:link {
 }
 .recommend-list-content p a{
 	font-size: 12px;
+}
+
+.danmu{
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+
+}
+.danmu-time{
+	width: 60px;
+	height: 20px;
+	background-color: white;
+	float: left;
+	padding-left: 20px;
+}
+.danmu-content{
+	width: 150px;
+	height: 30px;
+	float: left;
+	padding-left: 5px;
+	position: relative;
+	overflow: hidden;
+	line-height: 30px;
+	text-overflow: ellipsis;
+	 white-space: nowrap; 
+}
+.danmu-sendtime{
+	width: 90px;
+	height: 20px;
+	background-color: white;
+	float: left;
+	padding-left: 5px;
+}
+
+.danmu-anim{
+	position: absolute;
+	top: 0px;
+	left: 680px;
+	color: white;
+	z-index: 10;
+	font-size: 25px;
+	width:fit-content;
 }

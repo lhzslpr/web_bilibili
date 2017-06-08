@@ -47,7 +47,7 @@
 				<a href=""><div class = "contianer-after-account">
 					<img class = "account-face" src = "img/myface.gif"></div></a>
 					<a href=""><div class = "color-white contianer-after-news">消息</div></a>
-					<a href=""><div class = " color-white contianer-after-message">动态</div></a>
+					<a href=""><div class = "color-white contianer-after-message">动态</div></a>
 					<a href=""><div class = "color-white contianer-after-favorite">收藏夹</div></a>
 					<a href=""><div class = "color-white contianer-after-history">历史</div></a>
 					<a href=""><div class = "color-white contianer-after-submission">投稿</div></a>
@@ -215,9 +215,9 @@
 					<div class = "video-detail-title">震惊！童年“男神”痞老板被“大哥”包围，竟然喊出这样的话？！</div>
 					<div class = "video-detail-content">
 						<a href=""><div class = "detail-content-menu">主页 </div></a>
-						&nbsp;>&nbsp; 
+						> 
 						<a href=""><div class = "detail-content-menu">鬼畜 </div></a>
-						&nbsp;>&nbsp; 
+						>
 						<a href=""><div class = "detail-content-menu">鬼畜调教</div></a>
 						<div class = "detail-content-time">2017-05-27 21:03</div>
 						<a href=""><div class = " detail-content-complaints">稿件投诉</div></a>
@@ -226,8 +226,8 @@
 						<img class = "video-views-pic" src = "img/play-num.png"><p>7808</p>
 						<img class = "video-views-pic" src = "img/danmu-num.png"><p>1331</p>
 						<div class = "video-views-line"></div>
-						<div class = " video-coin"><p>硬币&nbsp;&nbsp;27</p></div>
-						<div class = "video-collect"><p>收藏&nbsp;&nbsp;18</p></div>
+						<div class = " video-coin"><p>硬币  27</p></div>
+						<div class = "video-collect"><p>收藏  18</p></div>
 					</div>
 				</div>
 
@@ -246,7 +246,7 @@
 							<p>粉丝：43 </p>
 						</div>
 						<div class = "author-content-btn">
-							<p>&nbsp;+&nbsp;关注</p>
+							<p> +关注</p>
 						</div>
 
 					</div>
@@ -279,6 +279,7 @@
 					<div  class = "player-left-video">
 					 	<video class = "player-left-video" src="video/test.mp4" ></video>
 						<img class = "left-video-play" src="img/test1.png">
+						<!-- <div class = "danmu-anim">123</div> -->
 					</div>
 
 
@@ -306,6 +307,7 @@
 					</div>
 
 
+
 					<div class = "player-left-danmu">
 						<div class = "left-danmu-select"><img src="img/danmu-select.png"></div>
 						<div class = "left-danmu-color"><img src="img/danmu-color.png"></div>
@@ -319,7 +321,7 @@
 				<div class = "content-player-right">
 					<div class = "player-right-now">
 							<span>1</span>
-							<p>人正在看，0条弹幕</p>
+							<p>人正在看，30条弹幕</p>
 							<img src="img/player-menu.png">
 							<img src="img/player-setting.png">
 					</div>
@@ -336,7 +338,13 @@
 								<div class = "danmu-item-content">弹幕内容</div>
 								<div class = "danmu-item-sendtime">发送时间</div>
 							</div>
-							<div class = "detail-danmu-content">左舷弹幕太薄了，大家快来吐槽吧~</div>
+							<div class = "detail-danmu-content">
+								<li class = "danmu" v-for="item in danmus" data-min={{item.min}} data-sec={{item.sec}} data-text={{item.text}} data-flag=0>
+									<div class = "danmu-time">{{item.min}}:{{item.sec}}</div>
+									<div class = "danmu-content">{{item.text}}</div>
+									<div class = "danmu-sendtime">{{item.sendtime}}</div>
+								</li>
+							</div>
 							<div class = "detail-danmu-history">查看历史弹幕</div>
 						</div>
 
@@ -390,7 +398,6 @@
 				<div class = "share-content-mobile">
 					<div class = "content-link-text">分享<p>离线看更方便</p></div>
 				</div>
-				<!-- <div class = " video-coin"><p>硬币&nbsp;&nbsp;27</p></div> -->
 				<div class = "share-content-coin">
 					<div class = "content-link-text">硬币<p>4</p></div>
 				</div>
@@ -466,23 +473,7 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 		<div class = "bottom"></div> -->
-
 
 	</body>
 
