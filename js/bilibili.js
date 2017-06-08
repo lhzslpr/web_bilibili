@@ -286,12 +286,10 @@ var timer1 = setInterval(function(){
 			}
 		}
 	}
-
-
 	$(".now-time").text(function(){
 		return  min+":"+sec+'/' ;
 	});
-},100);
+},50);
 
 
 
