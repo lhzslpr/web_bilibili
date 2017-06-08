@@ -309,7 +309,7 @@ var timer1 = setInterval(function(){
 
 
 function danmu_animate(index){
-	var time=5000+Math.random()*5000; 	
+	var time=8000+Math.random()*5000; 	
 	$(".player-left-video").children().eq(index).animate({left:'-1000px'},time,'linear');	
 	console.log("index="+index);
 }
