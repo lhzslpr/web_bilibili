@@ -61,7 +61,7 @@
 					<div class = "gamecentry-content-left">
 						<a href=""><div class = "gamecentry-content-pic1"></div></a>
 						<div class = "gamecentry-content-pic234">
-							<a href=""> <li  class = "content-pic234" v-for = "item in items">
+							<a href=""> <li  class = "content-pic234" v-for = "item in games">
 								<img class="content-pic234-size" v-bind:title="item.message" v-bind:src="item.img_src">{{item.text}}
 							</li></a>
 						</div>
@@ -77,7 +77,7 @@
 								</li>
 							</a>
 						</div>
-						<img src="img/divimg-1.png" class = "divimg">
+						<img src="img/game_list/divimg-1.png" class = "divimg">
 					</div>
 				</div>
 				<div class = "detail detail-live">
@@ -97,7 +97,7 @@
 						<div class = "detail-live-title">热门活动：</div>
 						<a href="">
 							<div class = "detail-live-content">
-								<img src="img/live-pic-7.jpg" >
+								<img src="img/live_list/live-pic-7.jpg" >
 							</div>
 						</a>
 						<div class = "detail-live-content1 "></div>
@@ -300,7 +300,7 @@
 							     </li>
 							<li class = "left-con-voice"><img src="img/con-voice.png"></li>
 							<li class = "left-con-clarity">超清</li>
-							<li  class = "left-con-item" v-for = "item in items">
+							<li  class = "left-con-item" v-for = "item in cons">
 								<img v-bind:src="item.img_src">
 							</li>
 						</li>
@@ -367,7 +367,7 @@
 
 						<div class = "menu-detail-setting">
 							<p>按类型屏蔽</p>
-							<li v-for = "item in items">
+							<li v-for = "item in danmu_style">
 								<img v-bind:src="item.img_src"> 
 								{{item.name}}
 							</li>

@@ -1,10 +1,10 @@
 var pic234 = new Vue({
 	el: '.gamecentry-content-pic234',
 	data: {
-		items: [
-			{message:'命运-冠位指定（Fate/GO）', text : '命运-冠',img_src :"img/game-pic-2.png"},
-			{message:'阴阳师',text : '阴阳师',img_src :"img/game-pic-3.png"},
-			{message:'崩坏学院3',text : '崩坏3',img_src :"img/game-pic-4.jpg"},
+		games: [
+			{message:'命运-冠位指定（Fate/GO）', text : '命运-冠',img_src :"img/games/game-pic-2.png"},
+			{message:'阴阳师',text : '阴阳师',img_src :"img/games/game-pic-3.png"},
+			{message:'崩坏学院3',text : '崩坏3',img_src :"img/games/game-pic-4.jpg"},
 		]
 	  }
 	})
@@ -14,13 +14,13 @@ var game_lis = new Vue({
 	el: '.game-list',
 	data: {
 		game_list: [
-			{text : '梦间集',img_src:"img/divimg-1.png"},
-			{text : '罗小黑战记',img_src:"img/divimg-2.png"},
-			{text : '战争工厂',img_src:"img/divimg-3.png"},
-			{text : '一血万杰',img_src:"img/divimg-4.png"},
-			{text : '妃十三学院',img_src:"img/divimg-5.png"},
-			{text : '魔法禁书目录',img_src:"img/divimg-6.png"},
-			{text : '叛逆的百万亚瑟王',img_src:"img/divimg-7.png"},
+			{text : '梦间集',img_src:"img/game_list/divimg-1.png"},
+			{text : '罗小黑战记',img_src:"img/game_list/divimg-2.png"},
+			{text : '战争工厂',img_src:"img/game_list/divimg-3.png"},
+			{text : '一血万杰',img_src:"img/game_list/divimg-4.png"},
+			{text : '妃十三学院',img_src:"img/game_list/divimg-5.png"},
+			{text : '魔法禁书目录',img_src:"img/game_list/divimg-6.png"},
+			{text : '叛逆的百万亚瑟王',img_src:"img/game_list/divimg-7.png"},
 		]
 	  }
 	})
@@ -29,12 +29,12 @@ var livepic = new Vue({
 	el:'.live-list',
 	data:{
 		live_list: [
-			{text : '幕狸Meow',img_src:"img/live-pic-1.jpg"},
-			{text : '城市艺术节',img_src:"img/live-pic-2.jpg"},
-			{text : '小米公司',img_src:"img/live-pic-3.jpg"},
-			{text : '戏子大毒瘤',img_src:"img/live-pic-4.jpg"},
-			{text : '卡欧司之眼',img_src:"img/live-pic-5.jpg"},
-			{text : '天涯明月刀',img_src:"img/live-pic-6.gif"},
+			{text : '幕狸Meow',img_src:"img/live_list/live-pic-1.jpg"},
+			{text : '城市艺术节',img_src:"img/live_list/live-pic-2.jpg"},
+			{text : '小米公司',img_src:"img/live_list/live-pic-3.jpg"},
+			{text : '戏子大毒瘤',img_src:"img/live_list/live-pic-4.jpg"},
+			{text : '卡欧司之眼',img_src:"img/live_list/live-pic-5.jpg"},
+			{text : '天涯明月刀',img_src:"img/live_list/live-pic-6.gif"},
 		]		
 	}
 
@@ -187,27 +187,15 @@ var message = new Vue({
 	}
 })
 
-var con1 = new Vue({
-	el:'.player-left-co',
-	data:{
-		cons: [
-			{text:'img/con-danmu.png'},
-			{text:'img/con-for.png'},
-			{text:'img/con-mod.png'},
-			{text:'img/con-quan.png'}
-		]		
-	}
-})
-
 
 var pic = new Vue({
 	el: '.player-left-con',
 	data: {
-		items: [
-			{img_src :"img/con-danmu.png"},
-			{img_src :"img/con-for.png"},
-			{img_src :"img/con-mod.png"},
-			{img_src :"img/con-quan.png"}
+		cons: [
+			{img_src :"img/cons/con-danmu.png"},
+			{img_src :"img/cons/con-for.png"},
+			{img_src :"img/cons/con-mod.png"},
+			{img_src :"img/cons/con-quan.png"}
 		]
 	  }
 	})
@@ -218,17 +206,17 @@ var pic = new Vue({
 	el: '.menu-detail-video',
 	data: {
 		videos: [
-			{img_src :"img/video-ohter-1.jpg",title:"【火影忍者/佐樱】其实我就想放一下最后那张图",playnum:"12.3万",danmunum:"1023"},
-			{img_src :"img/video-ohter-2.jpg",title:"【搬运】火影忍者忍术集合",playnum:"4231",danmunum:"534"},
-			{img_src :"img/video-ohter-3.jpg",title:"后♂来",playnum:"5.4万",danmunum:"1230"},
-			{img_src :"img/video-ohter-4.jpg",title:"FA♂中福利",playnum:"7923",danmunum:"97"},
-			{img_src :"img/video-ohter-5.png",title:"火影手游须佐鼬50抽光头",playnum:"1004",danmunum:"154"},
-			{img_src :"img/video-ohter-6.png",title:"2010.2011年 b站上那些收藏量>20000的视频们",playnum:"3517",danmunum:"697"},
-			{img_src :"img/video-ohter-7.jpg",title:"【兄贵】Poker ♂ Face",playnum:"8.3万",danmunum:"9463"},
-			{img_src :"img/video-ohter-8.jpg",title:"【性♂游记】第二集  哲学家",playnum:"8308",danmunum:"514"},
-			{img_src :"img/video-ohter-9.jpg",title:"四驱♂兄弟",playnum:"5.5万",danmunum:"477"},
-			{img_src :"img/video-ohter-10.jpg",title:"【哲学♂dark片】Van的复♂仇 （Van罪♂睾手）",playnum:"953",danmunum:"78"},
-			{img_src :"img/video-ohter-11.jpg",title:"【兄贵】白金disco",playnum:"4932",danmunum:"388"}
+			{img_src :"img/videos/video-ohter-1.jpg",title:"【火影忍者/佐樱】其实我就想放一下最后那张图",playnum:"12.3万",danmunum:"1023"},
+			{img_src :"img/videos/video-ohter-2.jpg",title:"【搬运】火影忍者忍术集合",playnum:"4231",danmunum:"534"},
+			{img_src :"img/videos/video-ohter-3.jpg",title:"后♂来",playnum:"5.4万",danmunum:"1230"},
+			{img_src :"img/videos/video-ohter-4.jpg",title:"FA♂中福利",playnum:"7923",danmunum:"97"},
+			{img_src :"img/videos/video-ohter-5.png",title:"火影手游须佐鼬50抽光头",playnum:"1004",danmunum:"154"},
+			{img_src :"img/videos/video-ohter-6.png",title:"2010.2011年 b站上那些收藏量>20000的视频们",playnum:"3517",danmunum:"697"},
+			{img_src :"img/videos/video-ohter-7.jpg",title:"【兄贵】Poker ♂ Face",playnum:"8.3万",danmunum:"9463"},
+			{img_src :"img/videos/video-ohter-8.jpg",title:"【性♂游记】第二集  哲学家",playnum:"8308",danmunum:"514"},
+			{img_src :"img/videos/video-ohter-9.jpg",title:"四驱♂兄弟",playnum:"5.5万",danmunum:"477"},
+			{img_src :"img/videos/video-ohter-10.jpg",title:"【哲学♂dark片】Van的复♂仇 （Van罪♂睾手）",playnum:"953",danmunum:"78"},
+			{img_src :"img/videos/video-ohter-11.jpg",title:"【兄贵】白金disco",playnum:"4932",danmunum:"388"}
 			// {img_src :"img/video-ohter-12.jpg",title:"【火影忍者】手游：战斗是忍者证明自我的一种形式！",playnum:"1.3万",danmunum:"998"}
 		]
 	  }
@@ -238,14 +226,14 @@ var pic = new Vue({
 var pic = new Vue({
 	el: '.menu-detail-setting',
 	data: {
-		items: [
-			{img_src :"img/danmu-style- (6).png",name:'滚动弹幕'},
-			{img_src :"img/danmu-style- (5).png",name:'顶端弹幕'},
-			{img_src :"img/danmu-style- (4).png",name:'底端弹幕'},
-			{img_src :"img/danmu-style- (3).png",name:'普通弹幕'},
-			{img_src :"img/danmu-style- (2).png",name:'字体弹幕'},
-			{img_src :"img/danmu-style- (1).png",name:'特殊弹幕'},
-			{img_src :"img/danmu-style- (7).png",name:'彩色弹幕'}
+		danmu_style: [
+			{img_src :"img/danmu_style/danmu-style- (6).png",name:'滚动弹幕'},
+			{img_src :"img/danmu_style/danmu-style- (5).png",name:'顶端弹幕'},
+			{img_src :"img/danmu_style/danmu-style- (4).png",name:'底端弹幕'},
+			{img_src :"img/danmu_style/danmu-style- (3).png",name:'普通弹幕'},
+			{img_src :"img/danmu_style/danmu-style- (2).png",name:'字体弹幕'},
+			{img_src :"img/danmu_style/danmu-style- (1).png",name:'特殊弹幕'},
+			{img_src :"img/danmu_style/danmu-style- (7).png",name:'彩色弹幕'}
 		]
 	  }
 	})
@@ -283,21 +271,21 @@ var content_menu = new Vue({
     data: {
         content_menu_list: {
             1: [
-                {img_src :"img/video-ohter-1.jpg",title:"【火影忍者/佐樱】其实我就想放一下最后那张图"},
-                {img_src :"img/video-ohter-2.jpg",title:"【搬运】火影忍者忍术集合"},
-                {img_src :"img/video-ohter-3.jpg",title:"后♂来"},
-				{img_src :"img/video-ohter-4.jpg",title:"FA♂中福利"}
+                {img_src :"img/videos/video-ohter-1.jpg",title:"【火影忍者/佐樱】其实我就想放一下最后那张图"},
+                {img_src :"img/videos/video-ohter-2.jpg",title:"【搬运】火影忍者忍术集合"},
+                {img_src :"img/videos/video-ohter-3.jpg",title:"后♂来"},
+				{img_src :"img/videos/video-ohter-4.jpg",title:"FA♂中福利"}
             ],        
             2: [
-				{img_src :"img/video-ohter-5.png",title:"火影手游须佐鼬50抽光头"},
-				{img_src :"img/video-ohter-6.png",title:"2010.2011年 b站上那些收藏量>20000的视频们"},
-				{img_src :"img/video-ohter-7.jpg",title:"【兄贵】Poker ♂ Face"},
-				{img_src :"img/video-ohter-8.jpg",title:"【性♂游记】第二集  哲学家"}
+				{img_src :"img/videos/video-ohter-5.png",title:"火影手游须佐鼬50抽光头"},
+				{img_src :"img/videos/video-ohter-6.png",title:"2010.2011年 b站上那些收藏量>20000的视频们"},
+				{img_src :"img/videos/video-ohter-7.jpg",title:"【兄贵】Poker ♂ Face"},
+				{img_src :"img/videos/video-ohter-8.jpg",title:"【性♂游记】第二集  哲学家"}
             ],
             3: [
-			{img_src :"img/video-ohter-9.jpg",title:"四驱♂兄弟"},
-			{img_src :"img/video-ohter-10.jpg",title:"【哲学♂dark片】Van的复♂仇 （Van罪♂睾手）"},
-			{img_src :"img/video-ohter-11.jpg",title:"【兄贵】白金disco"}
+			{img_src :"img/videos/video-ohter-9.jpg",title:"四驱♂兄弟"},
+			{img_src :"img/videos/video-ohter-10.jpg",title:"【哲学♂dark片】Van的复♂仇 （Van罪♂睾手）"},
+			{img_src :"img/videos/video-ohter-11.jpg",title:"【兄贵】白金disco"}
             ]
         }
     }

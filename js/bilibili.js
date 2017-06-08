@@ -447,12 +447,12 @@ $(".menu-stop-setting").css("color","#00a1d6");
 var timer = setInterval(function(){
 	$(".left-message-btn1").click();
 },3000);
-preLoadImg("img/divimg-1.png");
-preLoadImg("img/divimg-2.png");
-preLoadImg("img/divimg-3.png");
-preLoadImg("img/divimg-4.png");
-preLoadImg("img/divimg-5.png");
-preLoadImg("img/divimg-6.png");
-preLoadImg("img/divimg-7.png");
+preLoadImg("img/game_list/divimg-1.png");
+preLoadImg("img/game_list/divimg-2.png");
+preLoadImg("img/game_list/divimg-3.png");
+preLoadImg("img/game_list/divimg-4.png");
+preLoadImg("img/game_list/divimg-5.png");
+preLoadImg("img/game_list/divimg-6.png");
+preLoadImg("img/game_list/divimg-7.png");
 
 
