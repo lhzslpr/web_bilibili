@@ -1,23 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Love</title>
 
-<html id = "html">
-<meta charset="UTF-8"> 
-<head>  
-	<link href="css/index.css" rel="stylesheet">
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
 </head>
+
 <body>
-		<div class = "roof" id="bigwork">大作业</div>
 
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2016-11-01,</span><br />
+			<span class="space"/><span class="comments">*2017-10-08.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			2016年10月31日，一位机灵可爱的女生写了一封情书。<br/>
+			当晚，男生看了好几遍情书。<br />
+			2016年11月1日，他们成了情侣。<br/>
+			男生 姓 <span class="keyword">林</span> <br />
+			女生 姓 <span class="keyword">高</span> <br />
+			<span class="comments">// 他们坠入了爱河. </span><br />
+			10月8日，女生的生日;<br />
+			<span class="comments">// 笨拙的男生不知道该给女生准备什么礼物.</span><br />
+			于是他想了想，写一份情书好了;<br />
+			<span class="comments">// 不准嫌弃！！！</span><br />
+			老婆，<span class="keyword">我爱你</span>。<br/>
+			我爱你调皮可爱摆各种pose<br/>
+			我爱你刁蛮任性耍小无赖<br/>
+			我爱你微笑时白花花的牙齿<br/>
+			我爱你温柔贤惠多才多艺<br/>
+			我爱你软萌娇弱<span class="keyword">易推倒</span><br/>
+			<span class="comments">//词穷了，嘻嘻</span><br />
+			我觉得吧，老婆是这个世界上最美的人，<br />
+			虽然偶尔会闹小脾气，删我好友，屏蔽电话<br />
+			但是我知道，都是我做的不对，不好<br/>
+			老婆，我会为了你变的更好，更棒<br/>
+			<span class="comments">// 不管我们距离有多远.</span><br />
+			
+			<br>
+			<br>
+			最后，我想告诉你:<br />
+			我会爱你一生一世直到永远;<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					宝宝，这是我们相爱在一起的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你直到永永远远。<br/>
+					<div class="signature">- 林亨泽</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-		<div class = "finish" id = "work1">作业一补交 </div>
-		<div class = "finish" id = "work2">作业二 </div>
-		<div class = "finish" id = "work3">作业三补交 </div>
-		<div class = "finish" id = "work4">作业四 </div>
-		<div class = "finish" id = "work51">作业五之一 </div>
-		<div class = "finish" id = "work52">作业五之二 </div>
-		<div class = "finish" id = "work6">作业六</div>
-		
-		<img id = "preview"> 
-		
+<audio src="js/music.mp3" autoplay=""></audio>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 11, 1);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 40000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<div style="text-align:center;clear:both">
+
+</div>
 </body>
-	<script type="text/javascript" src="js/index.js"  ></script>
 </html>
