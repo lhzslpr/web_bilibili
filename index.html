@@ -1,113 +1,485 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Love</title>
-
-<style type="text/css">
-@font-face {
-	font-family: digit;
-	src: url('digital-7_mono.ttf') format("truetype");
-}
-</style>
-
-<link href="css/default.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/garden.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
-
+	<meta charset="utf-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bilibili.css">
+	<script src="https://cdn.bootcss.com/vue/1.0.7/vue.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link   rel="icon" href="http://static.hdslb.com/images/favicon.ico" type="image/x-icon"/>
+	<title>震惊！童年“男神”痞老板被“大哥”包围，竟然喊出这样的话？！</title>
 </head>
 
-<body>
 
-<div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">/**</span><br />
-			<span class="space"/><span class="comments">*2016-11-01,</span><br />
-			<span class="space"/><span class="comments">*2017-10-08.</span><br />
-			<span class="space"/><span class="comments">*/</span><br />
-			2016年10月31日，一位机灵可爱的女生写了一封情书。<br/>
-			当晚，男生看了好几遍情书。<br />
-			2016年11月1日，他们成了情侣。<br/>
-			男生 姓 <span class="keyword">林</span> <br />
-			女生 姓 <span class="keyword">高</span> <br />
-			<span class="comments">// 他们坠入了爱河. </span><br />
-			10月8日，女生的生日;<br />
-			<span class="comments">// 笨拙的男生不知道该给女生准备什么礼物.</span><br />
-			于是他想了想，写一份情书好了;<br />
-			<span class="comments">// 不准嫌弃！！！</span><br />
-			老婆，<span class="keyword">我爱你</span>。<br/>
-			我爱你调皮可爱摆各种pose<br/>
-			我爱你刁蛮任性耍小无赖<br/>
-			我爱你微笑时白花花的牙齿<br/>
-			我爱你温柔贤惠多才多艺<br/>
-			我爱你软萌娇弱<span class="keyword">易推倒</span><br/>
-			<span class="comments">//词穷了，嘻嘻</span><br />
-			我觉得吧，老婆是这个世界上最美的人，<br />
-			虽然偶尔会闹小脾气，删我好友，屏蔽电话<br />
-			但是我知道，都是我做的不对，不好<br/>
-			老婆，我会为了你变的更好，更棒<br/>
-			<span class="comments">// 不管我们距离有多远.</span><br />
-			
-			<br>
-			<br>
-			最后，我想告诉你:<br />
-			我会爱你一生一世直到永远;<br />
-		</div>
-		<div id="loveHeart">
-			<canvas id="garden"></canvas>
-			<div id="words">
-				<div id="messages">
-					宝宝，这是我们相爱在一起的时光。
-					<div id="elapseClock"></div>
+<body>		
+	<div class = "top">
+		<img calss = "top-contianer" src = "img/head.png">
+		<div class = "top-contianer-background"></div>
+		<div class = "top-contianer-content">
+			<div class = "top-contianer-before ">
+				<a href="" >
+					<div  class = "contianer-before-home  demo list-mid-size ">
+						<img src = "img/home.png" class = " color-white pic-home " >
+						<p title="主站">主站</p>
+					</div>
+				</a>
+				<a href="">
+					<div class = "contianer-before-picfriend demo list-small-size">
+						<p title="画友">画友</p>
+					</div>
+				</a>
+				<a href="">
+					<div class = "contianer-before-gamecenter  demo list-big-size">
+						<p  title="游戏中心">游戏中心</p>
+					</div>
+				</a>
+				<a href="">
+					<div class = "demo contianer-before-live list-small-size"><p title="直播">直播</p></div>
+				</a>
+				<a href="">
+					<div class = "demo contianer-before-around list-small-size"><p title="周边">周边</p></div>
+				</a>
+				<a href="">
+					<div class = "demo contianer-before-mobile list-mid-size"><p title="移动端">移动端</p></div>
+				</a>
+			</div>
+
+			<div class = "contianer-after">
+				<a href=""><div class = "contianer-after-account">
+					<img class = "account-face" src = "img/myface.gif"></div></a>
+					<a href=""><div class = "color-white contianer-after-news">消息</div></a>
+					<a href=""><div class = "color-white contianer-after-message">动态</div></a>
+					<a href=""><div class = "color-white contianer-after-favorite">收藏夹</div></a>
+					<a href=""><div class = "color-white contianer-after-history">历史</div></a>
+					<a href=""><div class = "color-white contianer-after-submission">投稿</div></a>
 				</div>
-				<div id="loveu">
-					爱你直到永永远远。<br/>
-					<div class="signature">- 林亨泽</div>
+			</div>
+			<div class = "contianer-after-back">
+				<div class = "submission-background"></div>
+			</div>
+			<div class = "conianer-detail">
+				<div class = "detail detail-gamecentry">
+					<div class = "gamecentry-content-left">
+						<a href=""><div class = "gamecentry-content-pic1"></div></a>
+						<div class = "gamecentry-content-pic234">
+							<a href=""> <li  class = "content-pic234" v-for = "item in games">
+								<img class="content-pic234-size" v-bind:title="item.message" v-bind:src="item.img_src">{{item.text}}
+							</li></a>
+						</div>
+					</div>
+					<div class = " gamecentry-content-right">
+						<img src="img/title.png">
+						<a href="" class = "game-forum">游戏论坛</a>
+						<div class = "game-list">
+							<div class = "shadow-left"></div>
+							<a href="" class = "game-list-hreft">
+								<li  class = " game-list-item" v-for = "game_name in game_list" >			
+									<span class = "color-block"  data-src={{game_name.img_src}} >{{game_name.text}}</span>						
+								</li>
+							</a>
+						</div>
+						<img src="img/game_list/divimg-1.png" class = "divimg">
+					</div>
+				</div>
+				<div class = "detail detail-live">
+					<div class = "detail-live-left">
+						热门直播：
+						<div class = "live-list">
+							<a href="">
+								<li  class = "live-list-item" v-for = "live_name in live_list" >			
+									<img class = "live-face" v-bind:src = "live_name.img_src" >		
+									<i class = " live-animat">LIVE</i>
+									<p class = "color-block">{{live_name.text}}</p>			
+								</li>
+							</a>
+						</div>
+					</div>
+					<div class = "detail-live-right">
+						<div class = "detail-live-title">热门活动：</div>
+						<a href="">
+							<div class = "detail-live-content">
+								<img src="img/live_list/live-pic-7.jpg" >
+							</div>
+						</a>
+						<div class = "detail-live-content1 "></div>
+					</div>
+				</div>
+
+				<div class = "detail-mobile">
+					<img src="img/mobile.png">
+					<img class ="er-pic"src="img/mobile-er.png">
+				</div>
+
+
+				<div class = "detail-face">
+					<div class = "face-id">abrand</div>
+
+					<div class = "face-money">
+						<a href=""><img src="img/coin.png">123</a>
+						<a href=""><img src= "img/b-coin.png">0</a>
+						<a style="float:right;" href=""><img src = "img/mail.png"></a>
+						<a style="float:right;" href=""><img src = "img/phone.png"></a>
+					</div>
+
+					<div class = "face-level">
+						<div class = "face-level-title">等级</div>
+						<div class = "face-level-progress">
+							<div class = "face-level-pic" >
+								<img class = "level-pic-pos" src="img/Level-icons.png">
+							</div>
+							<div class = "level-progress-need">
+								<div class = "level-progress-now"></div>
+							</div>
+						</div>
+						<div class = "face-level-num">
+							<p class = "num-need">/4500</p>
+							<p class = "num-now">2250</p>
+						</div>
+					</div>
+					<div class = "face-menu">
+						<a href=""><li  class = "face-menu-item" v-for = "menu_name in menu_list" >			
+							<img  class = "menu-pic" v-bind:src = "menu_name.img_src" >		
+							<p class = "color-block">{{menu_name.text}}</p>			
+						</li></a>
+					</div>
+					<div class = "face-quit">
+						<a href="" class = "color-block">
+							<div class = "face-quit-button">退出</div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+
+		<div class = "content">
+			<div class = "content-head">
+				<a href=""><img id = "ppt" class = "content-head-pic" src = "img/content-head-pic.png"></a>
+				<div class = "content-head-find">
+					<a href=""><div class = "find-ranking">
+						<img src="img/ranking.png">排行榜
+					</div></a>
+					<input class = "find-input" placeholder="今年份的 “我爱你”">
+					<a href=""><div class = "find-pic">
+						<img class = "find-pic-pos" src="img/find-pic-2.png">
+					</div></a>
+				</div>
+			</div>
+
+			<div class = "content-menu">
+				<div class = "content-menu-home">
+					<img src="img/menu-home-pic.png">
+					首页
+				</div>
+				<a><div class = "content-menu-title menu-title-{{item.key}}" v-for = "item in content_menu_title">
+					<div class = "title-news-size"><div class = "menu-title-news">{{item.num}}</div></div>
+					<p>{{item.text}}</p>
+				</div></a>
+				<a><div class = "menu-other-title">
+					<img src="img/menu-title-square.png">
+					广场
+				</div></a>
+				<a><div class = "menu-other-title">
+					<img src="img/menu-title-live.png">
+					直播
+				</div></a>
+				<a><div class = "menu-another-title">
+					<img src="img/menu-title-stop.png">
+					小黑屋
+				</div></a>	
+				<a><div class = "menu-other-title">
+					<img src="img/content-menu-pic.gif">
+				</div></a>				
+			</div>
+
+			<div class = "content-menu-list">
+				<div v-for="c in (content_menu_list)" >
+					<div  class = "menu-list-detail list-detail-{{$key}}" >
+						<li v-for="item in c" class = "list-detail-style">
+							<img src= "img/left-arrow.png" id = "left-arrow">
+							<p><a href="" >{{{item.title}}}</a></p>
+						</li>
+					</div>
+				</div>				
+			</div>
+
+
+
+
+			<div class = "content-video-detail">
+				<div class = "video-detail">
+					<div class = "video-detail-title">震惊！童年“男神”痞老板被“大哥”包围，竟然喊出这样的话？！</div>
+					<div class = "video-detail-content">
+						<a href=""><div class = "detail-content-menu">主页 </div></a>
+						> 
+						<a href=""><div class = "detail-content-menu">鬼畜 </div></a>
+						>
+						<a href=""><div class = "detail-content-menu">鬼畜调教</div></a>
+						<div class = "detail-content-time">2017-05-27 21:03</div>
+						<a href=""><div class = " detail-content-complaints">稿件投诉</div></a>
+					</div>
+					<div class = "video-views">
+						<img class = "video-views-pic" src = "img/play-num.png"><p>7808</p>
+						<img class = "video-views-pic" src = "img/danmu-num.png"><p>1331</p>
+						<div class = "video-views-line"></div>
+						<div class = " video-coin"><p>硬币  27</p></div>
+						<div class = "video-collect"><p>收藏  18</p></div>
+					</div>
+				</div>
+
+
+				<div class = "video-detail-author">
+					<img class = "pic-author" src = "img/video-author-pic.png">
+					<div class = "detail-author-content">
+						<div class = "author-content-name">
+							<p>C鼬君</p>
+							<a href=""><img class = "pic-mail" src="img/author-mail.png">私信</a>
+						</div>
+
+						<div class = "author-content-introduction">工作中 请关注 微博：银七力泥 </div>
+						<div class = "author-content-sub">
+							<p>投稿：59 </p>
+							<p>粉丝：43 </p>
+						</div>
+						<div class = "author-content-btn">
+							<p> +关注</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+		<div class = "player">	
+			<div class = "content-player">
+				<div class = "content-player-left">
+					<div class = "player-left-message">
+						<div class = "left-message-btn1"> < </div>
+
+						<a href="">
+							<div class = "left-message-text" >
+								<li v-for = "message in messages" style="color: {{message.color}};" id = "left-message-{{message.key}}"> {{message.text}}</li>
+							</div>
+						</a>
+
+						<div class = "left-message-btn2"> > </div>
+					</div>
+
+
+
+					<div  class = "player-left-video">
+					 	<video class = "player-left-video" src="video/test.mp4" ></video>
+						<img class = "left-video-play" src="img/test1.png">
+						<!-- <div class = "danmu-anim">123</div> -->
+					</div>
+
+
+					<div class = "player-left-con">
+							<li class = "left-con-play"><img src="img/con-play.png"></li>
+							<li class = "left-con-pro"><a href="">
+
+							<div class = "con-pro-totle">
+								<div class = "con-pro-totle-before"></div>
+								<div class = "con-pro-now"></div>
+							</div>
+
+							</a></li>
+							<li class = "left-con-time">
+							     <div class = "now-time">00:00/</div>
+							      
+							     <div class = "totle-time">00:00</div>
+							     </li>
+							<li class = "left-con-voice"><img src="img/con-voice.png"></li>
+							<li class = "left-con-clarity">超清</li>
+							<li  class = "left-con-item" v-for = "item in cons">
+								<img v-bind:src="item.img_src">
+							</li>
+						</li>
+					</div>
+
+
+
+					<div class = "player-left-danmu">
+						<div class = "left-danmu-select"><img src="img/danmu-select.png"></div>
+						<div class = "left-danmu-color"><img src="img/danmu-color.png"></div>
+						<input class = "left-danmu-input"  placeholder="您可以在这里输入弹幕吐槽哦~">
+						<a href=""><div class = "left-danmu-manners">弹幕礼仪 > </div></a>
+						<a href=""><div class = "left-danmu-send">发送></div></a>
+					</div>
+				</div>
+
+
+				<div class = "content-player-right">
+					<div class = "player-right-now">
+							<span>1</span>
+							<p>人正在看，30条弹幕</p>
+							<img src="img/player-menu.png">
+							<img src="img/player-setting.png">
+					</div>
+
+					<div class = "player-right-menu">
+						<p class = "menu-stop-setting">屏蔽设定</p>
+						<p class = "menu-danmu-list">弹幕列表</p>
+						<p class = "menu-other-video">推荐视频</p>
+					</div>
+					<div class = "right-menu-detail">
+						<div class = "menu-detail-danmu">
+							<div class = "detail-danmu-item">
+								<div class = "danmu-item-time">时间</div>
+								<div class = "danmu-item-content">弹幕内容</div>
+								<div class = "danmu-item-sendtime">发送时间</div>
+							</div>
+							<div class = "detail-danmu-content">
+								<li class = "danmu" v-for="item in danmus" data-min={{item.min}} data-sec={{item.sec}} data-text={{item.text}} data-flag=0>
+									<div class = "danmu-time">{{item.min}}:{{item.sec}}</div>
+									<div class = "danmu-content">{{item.text}}</div>
+									<div class = "danmu-sendtime">{{item.sendtime}}</div>
+								</li>
+							</div>
+							<div class = "detail-danmu-history">查看历史弹幕</div>
+						</div>
+
+
+
+						<div class = "menu-detail-video">
+							<li v-for="video in videos">
+							<a href="" class = "color-block" v-bind:title="video.title">
+								<img class = "video-small" v-bind:src = "video.img_src">
+								<div class = "detail-video-title">
+									<p>{{video.title}}</p>
+									<div ><img  src="img/play-num.png">{{video.playnum}}</div>
+									<div ><img  src="img/danmu-num.png">{{video.danmunum}}</div>
+								</div>
+							</a>
+							</li>
+						</div>
+
+
+
+						<div class = "menu-detail-setting">
+							<p>按类型屏蔽</p>
+							<li v-for = "item in danmu_style">
+								<img v-bind:src="item.img_src"> 
+								{{item.name}}
+							</li>
+						</div>
+
+
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
-<audio src="js/music.mp3" autoplay=""></audio>
 
-<script type="text/javascript">
-var offsetX = $("#loveHeart").width() / 2;
-var offsetY = $("#loveHeart").height() / 2 - 55;
-var together = new Date();
-together.setFullYear(2016, 11, 1);
-together.setHours(20);
-together.setMinutes(0);
-together.setSeconds(0);
-together.setMilliseconds(0);
 
-if (!document.createElement('canvas').getContext) {
-	var msg = document.createElement("div");
-	msg.id = "errorMsg";
-	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-	document.body.appendChild(msg);
-	$("#code").css("display", "none")
-	$("#copyright").css("position", "absolute");
-	$("#copyright").css("bottom", "10px");
-	document.execCommand("stop");
-} else {
-	setTimeout(function () {
-		startHeartAnimation();
-	}, 40000);
 
-	timeElapse(together);
-	setInterval(function () {
-		timeElapse(together);
-	}, 500);
 
-	adjustCodePosition();
-	$("#code").typewriter();
-}
-</script>
-<div style="text-align:center;clear:both">
+		<div class = "share">
+			<div class = "share-content">
+				<div class = "share-content-link">
+					<div class = "content-link-text">分享<p>0</p></div>
+					<img class = "content-link-xia" src="img/xiala.png">
+					<li class = "content-link-third"><img class = "third-1" src="img/weibo.png"></li>
+					<li class = "content-link-third"><img class = "third-2" src="img/qq.png"></li>
+					<li class = "content-link-third"><img class = "third-3" src="img/kongjian.png"></li>
+				</div>
+				<div class = "share-content-collect">
+					<div class = "content-link-text">收藏<p>6</p></div>
+				</div>
+				<div class = "share-content-mobile">
+					<div class = "content-link-text">分享<p>离线看更方便</p></div>
+				</div>
+				<div class = "share-content-coin">
+					<div class = "content-link-text">硬币<p>4</p></div>
+				</div>
+				<div class = "content-link-share">
+					<div class = "link-share-left">
+						<div class = "share-left-title">将视频贴到博客或论坛</div>
+						<div class = "share-left-address" v-for="item in items">
+							<div class = "left-address-type">{{item.title}}</div>
+							<div class = "left-address-text">{{item.add}}</div>
+							<div class = "left-address-copy">{{item.copy}}</div>
+						</div>					
+					</div>
 
-</div>
-</body>
-</html>
+					<div class = "link-share-right">
+						<div class = "share-left-title">微信扫一扫分享</div>
+						<img src="img/mobile-er.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+		<div class = "forum">
+			<div class = "forum-content">
+				<div class = "forum-content-left">
+					<div class = "forum-left">
+						<li  v-for="label in labels" class = "forum-left-label">{{label.text}}</li>
+					</div>
+					<div class = "forum-left-look">
+						<div >查看标签修改记录</div>
+						<div class = "forum-left-text">查看标签使用说明</div>
+					</div>
+					<div class = "forum-left-introduction">
+						<p>真没想到星辉子居然和本UP是同月同日生，最近受到BBEMYBABY的影响做成了这个</p>
+						<p>也算是赶上了，因为好久不做都变废了</p>
+						<p>总感觉好乱……算了</p>
+					</div>
+					<div class = "other-video-recommend">看过该视频的还喜欢</div>
+
+					<div class = "video-recommend-list"  >
+						<div  class = "recommend-list-content recommend-video-{{$key}}" v-for="c in (content_menu_list)" >
+								<li v-for="item in c" >
+								<a href=""><img v-bind:src = "item.img_src" ></a>
+								<p><a class= "color-block" href="" >{{{item.title}}}</a></p>
+								</li>
+						</div>
+					</div>
+						<div class = "recommend-btn recommend-left"><</div>
+						<div class = "recommend-btn recommend-right">></div>
+				</div>
+
+
+
+
+
+				<div class = "forum-content-right">
+					<div class = "forum-live">大家围观的直播</div>
+					<div class = "forum-live-pic">
+
+						<img class = "forum-live-img" src="img/forum-live-pic.png">
+						<img class = "forum-live-img1 account-face" src="img/forum-live-pic1.png">
+						<div class = "forum-live-title">古风~ 暖声</div>
+						<div class = "forum-live-level">
+							<img src="img/live-author.png">古风
+							<img src="img/live-view.png">1375
+						</div>
+						<div class = "live-animat-big">LIVE</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+
+	<script src="js/vue.js"></script>
+	<script language="JavaScript" src="js/bilibili.js"></script> 
+
+	</html>
