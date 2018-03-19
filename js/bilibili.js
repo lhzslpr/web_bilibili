@@ -250,7 +250,7 @@ $(".third-3").hover(function(e){
 
 
 
-var danmu_btn=0;
+var danmu_btn=1;
 $(".left-con-item").children().eq(0).click(function(){
 	danmu_btn=1-danmu_btn;
 	if(0==danmu_btn){
@@ -261,6 +261,7 @@ $(".left-con-item").children().eq(0).click(function(){
 		$(".left-con-item").children().eq(0).attr("src","img/cons/con-danmu.png");  
 	}
 	
+
 });
 
 var play_flag=0;
@@ -293,8 +294,8 @@ var timer1 = setInterval(function(){
 			if(min==danmu_min && sec==danmu_sec && 0==danmu_flag && 1==danmu_btn){
 				console.log(danmu_text);
 				$(".detail-danmu-content").children().eq(index).attr("data-flag","1");
-
 				var top=Math.random()*400;
+				top = Math.floor(top/25)*25;
 				$(".player-left-video").append('<div class = "danmu-anim" style="top:'+top+'px;">'+danmu_text+'</div>');
 				var now_index = $(".player-left-video").children().length/2;
 				danmu_animate(now_index);			
